@@ -21,6 +21,21 @@
           max-height: 90vh;      /* Limitar la altura al 100% del viewport */
           object-fit: contain;    /* Asegura que el GIF se ajuste sin deformarse */
       }
+
+      /* Define the styles for the custom button */
+      .custom-button {
+          background-color: black;
+          color: rgb(190, 0, 0);
+          padding: 10px 20px;
+          border: 3px solid white;
+          cursor: pointer;
+          border-radius: 5px;
+      }
+
+      /* Add hover effect to the button */
+      .custom-button:hover {
+          background-color: black;
+      }
     </style>
 </head>
 <body>
@@ -33,7 +48,7 @@
 
     <!-- Botón para cambiar de GIF a Video -->
     <div class="d-grid gap-2">
-        <button id="startVideoBtn" class="btn btn-primary" type="button">Ver Presentación</button>
+        <button id="startVideoBtn" class="custom-button" type="button">Ver Presentación</button>
     </div>
     
     <!-- Contenedor del GIF -->
@@ -49,7 +64,6 @@
         </video>
     </div>
 
-
     <!-- Script para manejar la lógica -->
     <script>
         document.getElementById("startVideoBtn").addEventListener("click", function() {
@@ -61,10 +75,10 @@
             var video = document.getElementById("presentationVideo");
             video.play();
             
-            // Después de 5 segundos, redirigir a init.html
+            // Después de 6 segundos, redirigir a init.html
             setTimeout(function() {
                 window.location.href = "init.html";
-            }, 6000);  // 5000 ms = 5 segundos
+            }, 6000);  // 6000 ms = 6 segundos
         });
     </script>
 </body>
