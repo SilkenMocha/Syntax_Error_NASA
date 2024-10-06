@@ -1,160 +1,194 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Syntax_Error</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="riesgos.html">Risks</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="resources.html">Resources</a>
-                  </li>
-              </div>
-            </div>
-        </nav>
-          <div class="container card mt-4">
-            <div class="card-body">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="magnetic-tab" data-bs-toggle="tab" data-bs-target="#magnetic-tab-pane" type="button" role="tab" aria-controls="magnetic-tab-pane" aria-selected="true">Magnetic Field</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="flares-tab" data-bs-toggle="tab" data-bs-target="#flares-tab-pane" type="button" role="tab" aria-controls="flares-tab-pane" aria-selected="false">Solar Flares</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="loops-tab" data-bs-toggle="tab" data-bs-target="#loops-tab-pane" type="button" role="tab" aria-controls="loops-tab-pane" aria-selected="false">Coronal Loops</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="winds-tab" data-bs-toggle="tab" data-bs-target="#winds-tab-pane" type="button" role="tab" aria-controls="winds-tab-pane" aria-selected="false">Solar Winds</button>
-                      </li>
-                  </ul>
-                  <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="magnetic-tab-pane" role="tabpanel" aria-labelledby="magnetic-tab" tabindex="0">
-                      <h3>Magnetic Field</h3>                      
-                      <div class="container mt-4">
-                        <div class="row">
-                          <!-- Columna de imagen -->
-                          <div class="col-md-4">
-                            <div class="card">
-                              <img src="https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_0193.jpg" class="card-img-top" alt="Imagen">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Columna de texto -->
-                          <div class="col-md-8">
-                            <p>
-                              Suspendisse potenti. Suspendisse non dapibus quam. Fusce ornare interdum luctus. 
-                              Phasellus auctor mollis eros, eget eleifend eros efficitur sed. Sed euismod aliquet fringilla.
-                              Fusce ut sagittis dui. Suspendisse eget elit dignissim, feugiat justo in, malesuada tellus.
-                              Mauris nec eros sed risus faucibus gravida.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-                    </div>
-                    <div class="tab-pane fade" id="flares-tab-pane" role="tabpanel" aria-labelledby="flares-tab" tabindex="0">
-                      <h3>Solar Flares</h3>
-                      <p>This section contains user profile details. You can customize this content to show user information, settings, or links to personal data.</p>
-                      <h3>Magnetic Field</h3>                      
-                      <div class="container mt-4">
-                        <div class="row">
-                          <!-- Columna de imagen -->
-                          <div class="col-md-4">
-                            <div class="card">
-                              <img src="https://sdo.gsfc.nasa.gov/assets/img/latest/latest_4096_0335.jpg" class="card-img-top" alt="Imagen">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Columna de texto -->
-                          <div class="col-md-8">
-                            <p>
-                              Suspendisse potenti. Suspendisse non dapibus quam. Fusce ornare interdum luctus. 
-                              Phasellus auctor mollis eros, eget eleifend eros efficitur sed. Sed euismod aliquet fringilla.
-                              Fusce ut sagittis dui. Suspendisse eget elit dignissim, feugiat justo in, malesuada tellus.
-                              Mauris nec eros sed risus faucibus gravida.
-                            </p>
-                          </div>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .navbar {
+            background-color: #1f1f1f;
+            border-bottom: 1px solid #444;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #bb86fc !important;
+        }
+
+        h2, h3 {
+            color: #bb86fc;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .card {
+            background-color: #1f1f1f;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: #ff4081;
+        }
+
+        .card-body p {
+            color: #b0b0b0;
+        }
+
+        .btn {
+            background-color: #bb86fc;
+            border: none;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff4081;
+        }
+
+        .card-title {
+            color: #ff4081;
+        }
+
+        /* Transiciones para tarjetas */
+        .card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+        
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            filter: invert(100%);
+        }
+    </style>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Syntax_Error</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="riesgos.html">Risks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección principal -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Columna de imagen -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/Purple sun.gif" class="card-img-top" alt="Solar Flare Image">
+                </div>
+            </div>
+
+            <!-- Columna de texto -->
+            <div class="col-md-8">
+                <h2>What is a solar flare or geomagnetic storm?</h2>
+                <p>A solar flare or geomagnetic storm is a disruption of Earth's magnetic field caused by the interaction between the planet's magnetosphere and solar wind or coronal mass ejections. Solar storms, which include solar flares, solar wind, and coronal mass ejections, are sudden releases of energy from the Sun's atmosphere. These events are part of the solar cycle, a repeating 11-year process where the Sun’s magnetic poles flip...</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <h3>Solar storm</h3>
+                    <p>Solar storms are events that occur in the sun’s atmosphere, characterized by the sudden release of energy, including solar flares, solar wind, and coronal mass ejections...</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <h3>What is a solar flare or geomagnetic storm?</h3>
+                    <p>A solar cycle lasts eleven years, and this process repeats, causing the sun's North and South poles to switch...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de auroras -->
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">Aurora Borealis</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/auroras mapa.gif" class="card-img-top" alt="Aurora Map">
                         </div>
-                      </div>
-                    
                     </div>
-                    <div class="tab-pane fade" id="loops-tab-pane" role="tabpanel" aria-labelledby="loops-tab" tabindex="0">
-                      <h3>Coronal Loops</h3>
-                      <p>If you have any questions, feel free to reach out to us via email, phone, or social media. We are here to help you!</p>
-                      <h3>Magnetic Field</h3>                      
-                      <div class="container mt-4">
-                        <div class="row">
-                          <!-- Columna de imagen -->
-                          <div class="col-md-4">
-                            <div class="card">
-                              <img src="https://sdo.gsfc.nasa.gov/assets/img/latest/latest_4096_211193171.jpg" class="card-img-top" alt="Imagen">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Columna de texto -->
-                          <div class="col-md-8">
-                            <p>
-                              Suspendisse potenti. Suspendisse non dapibus quam. Fusce ornare interdum luctus. 
-                              Phasellus auctor mollis eros, eget eleifend eros efficitur sed. Sed euismod aliquet fringilla.
-                              Fusce ut sagittis dui. Suspendisse eget elit dignissim, feugiat justo in, malesuada tellus.
-                              Mauris nec eros sed risus faucibus gravida.
-                            </p>
-                          </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/auroras.gif" class="card-img-top" alt="Auroras Image">
                         </div>
-                      </div>
-                    
                     </div>
-                    <div class="tab-pane fade" id="winds-tab-pane" role="tabpanel" aria-labelledby="winds-tab" tabindex="0">
-                      <h3>Solar Winds</h3>
-                      <p>This tab is currently disabled, but you can enable it in the future for additional features or content.</p>
-                      <h3>Magnetic Field</h3>                      
-                      <div class="container mt-4">
-                        <div class="row">
-                          <!-- Columna de imagen -->
-                          <div class="col-md-4">
-                            <div class="card">
-                              <img src="https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_0193.jpg" class="card-img-top" alt="Imagen">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Columna de texto -->
-                          <div class="col-md-8">
-                            <p>
-                              Suspendisse potenti. Suspendisse non dapibus quam. Fusce ornare interdum luctus. 
-                              Phasellus auctor mollis eros, eget eleifend eros efficitur sed. Sed euismod aliquet fringilla.
-                              Fusce ut sagittis dui. Suspendisse eget elit dignissim, feugiat justo in, malesuada tellus.
-                              Mauris nec eros sed risus faucibus gravida.
-                            </p>
-                          </div>
+                </div>
+                <p class="card-body mt-3">The northern lights, or auroras, are a natural phenomenon that occurs when protons and electrons released by the sun collide with the atmosphere...</p>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card p-3">
+                            <h3>Why do we see Auroras?</h3>
+                            <p>We see auroras due to the flow of solar particles interacting with Earth's magnetic field and atmospheric gases...</p>
                         </div>
-                      </div>
-                    
                     </div>
-                </div> 
-            
-    </body>
+                    <div class="col-md-6">
+                        <div class="card p-3">
+                            <h3>Carrington Event</h3>
+                            <p>The biggest recorded solar storm, the Carrington Event of 1859, caused auroras to be seen in unusual places like the Caribbean...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de mayo 2024 -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Columna de texto -->
+            <div class="col-md-8">
+                <h2>May 2024</h2>
+                <p>In May, the sun produced its largest solar storm in 20 years. The storm, classified as G5, was so powerful that auroras were visible as far as Mexico...</p>
+            </div>
+
+            <!-- Columna de imagen -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/Aurora chih.jpg" class="card-img-top" alt="Auroras in Chihuahua">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
