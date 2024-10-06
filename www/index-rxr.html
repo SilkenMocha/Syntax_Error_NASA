@@ -30,20 +30,21 @@
       }
 
       /* Define the styles for the custom button */
-      .custom-button {
-    background-color: red;
-    color: black;
-    padding: 10px 10px;
-    border: 3px solid white;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 50px; /* Change this value to set the button length */
-}
-
-/* Add hover effect to the button */
-.custom-button:hover {
-    background-color: black;
-}
+    .custom-button {
+        background-color: red;
+        color: black;
+        padding: 10px 10px;
+        border: 3px solid white;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 150px; /* Set the desired width */
+        display: inline-block; /* Ensure the button respects its width */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+    
+    .custom-button:hover {
+        background-color: black;
+    }
 </style>
 </head>
 <body>
@@ -86,7 +87,7 @@
             // Después de 6 segundos, redirigir a init.html
             setTimeout(function() {
                 window.location.href = "init.html";
-            }, 6000);  // 6000 ms = 6 segundos
+            }, 8000);  // 6000 ms = 6 segundos
         });
     </script>
 </body>
