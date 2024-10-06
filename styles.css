@@ -1,0 +1,51 @@
+/* Estilo general para textos */
+body {
+    font-size: 16px; /* Ajusta el tamaño base de fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+  }
+  
+  /* Para pantallas más pequeñas (móviles) */
+  @media (max-width: 576px) {
+    body {
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    p {
+      margin-bottom: 15px; /* Ajusta el espaciado */
+    }
+  }
+  
+  /* Para pantallas medianas */
+  @media (min-width: 577px) and (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    p {
+      margin-bottom: 18px;
+    }
+  }
+  
+  /* Para pantallas grandes */
+  @media (min-width: 769px) {
+    body {
+      font-size: 16px;
+    }
+  
+    h1 {
+      font-size: 32px;
+    }
+  
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  
